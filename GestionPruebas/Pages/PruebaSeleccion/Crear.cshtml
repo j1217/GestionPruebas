@@ -1,0 +1,37 @@
+﻿@page
+@model GestionPruebas.Pages.PruebaSeleccion.CrearModel
+@{
+    ViewData["Title"] = "Crear Pregunta";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div>
+        <label asp-for="Pregunta.TextoPregunta"></label>
+        <input asp-for="Pregunta.TextoPregunta" />
+        <span asp-validation-for="Pregunta.TextoPregunta"></span>
+    </div>
+
+    <div>
+        <label asp-for="Pregunta.OpcionesRespuesta"></label>
+        <input asp-for="Pregunta.OpcionesRespuesta" />
+        <span asp-validation-for="Pregunta.OpcionesRespuesta"></span>
+    </div>
+
+    <div>
+        <label asp-for="Pregunta.RespuestaCorrecta"></label>
+        <input asp-for="Pregunta.RespuestaCorrecta" />
+        <span asp-validation-for="Pregunta.RespuestaCorrecta"></span>
+    </div>
+
+    <!-- Agrega otros campos del modelo según sea necesario -->
+
+    <div>
+        <button type="submit">Guardar</button>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

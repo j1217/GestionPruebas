@@ -1,0 +1,53 @@
+﻿@page
+@model GestionPruebas.Pages.Aspirantes.CreateModel
+@{
+    ViewData["Title"] = "Crear Aspirante";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div>
+        <label asp-for="Aspirante.Nombre"></label>
+        <input asp-for="Aspirante.Nombre" />
+        <span asp-validation-for="Aspirante.Nombre"></span>
+    </div>
+
+    <div>
+        <label asp-for="Aspirante.Apellido"></label>
+        <input asp-for="Aspirante.Apellido" />
+        <span asp-validation-for="Aspirante.Apellido"></span>
+    </div>
+
+    <div>
+        <label asp-for="Aspirante.DatosContacto"></label>
+        <input asp-for="Aspirante.DatosContacto" />
+        <span asp-validation-for="Aspirante.DatosContacto"></span>
+    </div>
+
+    <div>
+        <label asp-for="Aspirante.EstadoPrueba"></label>
+        <input asp-for="Aspirante.EstadoPrueba" />
+        <span asp-validation-for="Aspirante.EstadoPrueba"></span>
+    </div>
+
+    <div>
+        <label asp-for="Aspirante.Calificacion"></label>
+        <input asp-for="Aspirante.Calificacion" />
+        <span asp-validation-for="Aspirante.Calificacion"></span>
+    </div>
+
+    <div>
+        <label asp-for="Aspirante.DatosContacto"></label>
+        <input asp-for="Aspirante.DatosContacto" />
+        <span asp-validation-for="Aspirante.DatosContacto"></span>
+    </div>
+
+    <div>
+        <button type="submit">Guardar</button>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

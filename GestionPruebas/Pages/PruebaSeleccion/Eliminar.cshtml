@@ -1,0 +1,17 @@
+﻿@page "{id:int}"
+@model GestionPruebas.Pages.PruebaSeleccion.EliminarModel
+@{
+    ViewData["Title"] = "Eliminar Prueba";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="PruebaToDelete.ID" />
+
+    <div class="form-group">
+        <p>¿Estás seguro de que deseas eliminar esta prueba?</p>
+    </div>
+
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>

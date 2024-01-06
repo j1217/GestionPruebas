@@ -1,0 +1,17 @@
+﻿@page "{id:int}"
+@model GestionPruebas.Pages.Aspirantes.EliminarModel
+@{
+    ViewData["Title"] = "Eliminar Aspirante";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="AspiranteToDelete.ID" />
+
+    <div class="form-group">
+        <p>¿Estás seguro de que deseas eliminar este aspirante?</p>
+    </div>
+
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>

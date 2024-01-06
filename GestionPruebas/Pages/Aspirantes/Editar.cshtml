@@ -1,0 +1,34 @@
+﻿@page
+@model GestionPruebas.Pages.Aspirantes.EditarModel
+@{
+    ViewData["Title"] = "Editar Aspirante";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="AspiranteEdit.ID" />
+
+    <div class="form-group">
+        <label asp-for="AspiranteEdit.Nombre"></label>
+        <input asp-for="AspiranteEdit.Nombre" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="AspiranteEdit.Apellido "></label>
+        <input asp-for="AspiranteEdit.Apellido " class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="AspiranteEdit.DatosContacto "></label>
+        <input asp-for="AspiranteEdit.DatosContacto " class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="AspiranteEdit.EstadoPrueba "></label>
+        <input asp-for="AspiranteEdit.EstadoPrueba " class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="AspiranteEdit.Calificacion "></label>
+        <input asp-for="AspiranteEdit.Calificacion " class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
